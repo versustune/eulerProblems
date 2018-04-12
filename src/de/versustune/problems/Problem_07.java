@@ -4,7 +4,7 @@ import de.versustune.Utils;
 
 public class Problem_07 implements Problems{
     public static void execute() {
-        Utils.startText("10001st Prime started...", "=");
+        Utils.startText("10001st Prime started...");
         long iterator = 0;
         long prime = 0;
 

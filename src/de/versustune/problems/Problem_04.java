@@ -5,7 +5,7 @@ import de.versustune.Utils;
 
 public class Problem_04 implements Problems{
     public static void execute() {
-        Utils.startText("largest Palindrome Product started...", "=");
+        Utils.startText("largest Palindrome Product started...");
         Palindrome palindrome = new Palindrome();
         long biggestPalindrom = 0;
         int factorA = 0;

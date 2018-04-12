@@ -5,6 +5,8 @@ import de.versustune.problems.*;
 public class Main {
 
     public static void main(String[] args) {
+        Utils.setUnderlineFormat("-");
+        Utils.startLogo();
         Problem_01.execute();
         Problem_02.execute();
         Problem_03.execute();

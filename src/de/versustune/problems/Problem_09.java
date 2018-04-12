@@ -4,7 +4,7 @@ import de.versustune.Utils;
 
 public class Problem_09 implements Problems {
     public static void execute() {
-        Utils.startText("Pythagoras started...", "=");
+        Utils.startText("Pythagoras started...");
         int sum = 1000;
         int product = 0;
         for (int a = 1; a < sum / 3; a++) {
