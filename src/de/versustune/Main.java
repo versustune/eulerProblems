@@ -14,5 +14,6 @@ public class Main {
         Problem_07.execute();
         Problem_08.execute();
         Problem_09.execute();
+        Problem_10.execute();
     }
 }
