@@ -1,0 +1,15 @@
+Setze Summe auf 0
+Beginne eine schleife von 0 bis 1000
+    Wenn die aktuelle Zahl durch 3 oder 5 Teilbar ist
+        Erhöhe die Summe um aktuelle Zahl
+Gebe die Aktuelle zahl aus
+
+(JAVA Beispiel)
+int sum = 0;
+for (int temp = 0; temp < 1000; temp++) {
+    if (temp % 3 == 0 || temp % 5 == 0) {
+        sum += temp;
+    }
+}
+
+System.out.println(sum);
