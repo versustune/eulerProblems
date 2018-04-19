@@ -21,25 +21,16 @@ public class Utils {
         return true;
     }
 
-    public static void startText(String s) {
-        System.out.println(Utils.ANSI_GREEN + s + Utils.ANSI_RESET);
-        StringBuilder underline = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            underline.append(Utils.underlineFormat);
-        }
-        System.out.println(Utils.ANSI_GREEN + underline + Utils.ANSI_RESET);
-    }
-
     public static void infoText(String s) {
         System.out.println(Utils.ANSI_BLUE + s + Utils.ANSI_RESET);
     }
 
-    public static void sumText(int s) {
-        System.out.println(Utils.ANSI_PURPLE + "[Ergebnis] " + s + Utils.ANSI_RESET + "\n");
+    public static void sumText(int s, String problem) {
+        System.out.println(Utils.ANSI_PURPLE + problem + " [Ergebnis] " + s + Utils.ANSI_RESET + "\n");
     }
 
-    public static void sumText(long s) {
-        System.out.println(Utils.ANSI_PURPLE + "[Ergebnis] " + s + Utils.ANSI_RESET + "\n");
+    public static void sumText(long s, String problem) {
+        System.out.println(Utils.ANSI_PURPLE + problem + " [Ergebnis] " + s + Utils.ANSI_RESET + "\n");
     }
 
     static void errorText(String s) {

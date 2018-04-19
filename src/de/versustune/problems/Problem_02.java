@@ -3,8 +3,7 @@ package de.versustune.problems;
 import de.versustune.Utils;
 
 public class Problem_02 implements Problems{
-    public static void execute() {
-        Utils.startText("Even Fibonacci Numbers started...");
+    public void execute() {
         int x = 0, y = 1, z = x + y, sumEven = 0;
 
         while (z < 4000000) {
@@ -16,6 +15,6 @@ public class Problem_02 implements Problems{
             }
         }
 
-        Utils.sumText(sumEven);
+        Utils.sumText(sumEven, "Problem_02");
     }
 }

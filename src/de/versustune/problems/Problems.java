@@ -1,6 +1,5 @@
 package de.versustune.problems;
 
-interface Problems {
-    public static void execute() {
-    }
+public interface Problems {
+    void execute();
 }

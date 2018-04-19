@@ -4,8 +4,7 @@ import de.versustune.Utils;
 
 public class Problem_03 implements Problems{
 
-    public static void execute() {
-        Utils.startText("largest Prime Factor started...");
+    public void execute() {
         long number = 600851475143L;
 
         long highestPrime = 0; // init
@@ -19,6 +18,6 @@ public class Problem_03 implements Problems{
             ++i;
         }
 
-        Utils.sumText(highestPrime);
+        Utils.sumText(highestPrime, "Problem_03");
     }
 }

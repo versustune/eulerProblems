@@ -3,9 +3,7 @@ package de.versustune.problems;
 import de.versustune.Utils;
 
 public class Problem_05 implements Problems{
-    public static void execute() {
-        Utils.startText("smallest Multiple started...");
-
+    public void execute() {
         byte i;
         long s = 1, p;
         final byte P[] = new byte[]{2, 3, 5, 7, 11, 13, 17, 19}, N = 20;
@@ -16,6 +14,6 @@ public class Problem_05 implements Problems{
                 p *= P[i];
             s *= p;
         }
-        Utils.sumText(s);
+        Utils.sumText(s, "Problem_05");
     }
 }

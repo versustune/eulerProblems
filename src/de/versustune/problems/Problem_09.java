@@ -3,8 +3,7 @@ package de.versustune.problems;
 import de.versustune.Utils;
 
 public class Problem_09 implements Problems {
-    public static void execute() {
-        Utils.startText("Pythagoras started...");
+    public void execute() {
         int sum = 1000;
         int product = 0;
         for (int a = 1; a < sum / 3; a++) {
@@ -15,6 +14,6 @@ public class Problem_09 implements Problems {
                 }
             }
         }
-        Utils.sumText(product);
+        Utils.sumText(product, "Problem_09");
     }
 }

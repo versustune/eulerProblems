@@ -3,17 +3,18 @@ package de.versustune.problems;
 import de.versustune.Utils;
 
 public class Problem_06 implements Problems{
-    public static void execute() {
-        Utils.startText("sum Square Difference started...");
+    public void execute() {
         long sum = 0;
         long square = 0;
-        for (int i = 1; i <= 100; i++) {
+        int i = 1;
+        while (i <= 100) {
             sum += i * i;
             square += i;
+            i++;
         }
         square = square * square;
 
         long diff = square - sum;
-        Utils.sumText(diff);
+        Utils.sumText(diff, "Problem_06");
     }
 }

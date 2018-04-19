@@ -3,8 +3,7 @@ package de.versustune.problems;
 import de.versustune.Utils;
 
 public class Problem_07 implements Problems{
-    public static void execute() {
-        Utils.startText("10001st Prime started...");
+    public void execute() {
         long iterator = 0;
         long prime = 0;
 
@@ -14,6 +13,6 @@ public class Problem_07 implements Problems{
                 prime++;
             }
         }
-        Utils.sumText(iterator);
+        Utils.sumText(iterator, "Problem_07");
     }
 }
